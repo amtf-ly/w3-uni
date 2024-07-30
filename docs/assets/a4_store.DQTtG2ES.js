@@ -1,1 +1,0 @@
-import{W as t,A as a,s,B as e}from"./index-DCzgWlOw.js";const n=t.importObject("a_admin",{customUI:!1}),m=a("amtf",{state:()=>{const t=s([]);n.get_xiaocxu().then((a=>{t.length=0,t.push(...a.data)}));const a=s({});return a.广告=e((()=>t.filter((t=>"广告"===t.lanmu)))),a.置顶=e((()=>t.filter((t=>"置顶"===t.lanmu)))),a.最新消息=e((()=>t.filter((t=>"最新消息"===t.lanmu)))),{a4:a}}});export{m as a};

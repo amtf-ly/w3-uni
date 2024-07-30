@@ -1,0 +1,1 @@
+import{c as t,w as e,e as a,o as r,a6 as l}from"./index-CIWIA-pi.js";import{_ as s}from"./_plugin-vue_export-helper.BCo6x5W8.js";const n=s({onLoad({url:t,title:e}){},data:()=>({url:null})},[["render",function(s,n,o,u,c,d){const f=a;return r(),t(f,null,{default:e((()=>[l("h1",{class:"text-center"},"amtf")])),_:1})}]]);export{n as default};
