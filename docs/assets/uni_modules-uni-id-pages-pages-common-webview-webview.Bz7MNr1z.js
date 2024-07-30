@@ -1,0 +1,1 @@
+import{o as t,c as e,w as a,e as r,a7 as l}from"./index-DCzgWlOw.js";import{_ as s}from"./_plugin-vue_export-helper.BCo6x5W8.js";const n=s({onLoad({url:t,title:e}){},data:()=>({url:null})},[["render",function(s,n,o,u,c,d){const f=r;return t(),e(f,null,{default:a((()=>[l("h1",{class:"text-center"},"amtf")])),_:1})}]]);export{n as default};

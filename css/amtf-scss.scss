@@ -1,0 +1,338 @@
+view,
+swiper,
+swiper-item {
+    box-sizing: border-box;
+}
+	.a-fugaitouming {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: 0;
+	}
+.a-card{
+	box-shadow: rgba($color: $uni-primary, $alpha: 0.4) 0px 0px 3px 1px;
+	border: 1px solid #DCDCDC;
+	border-radius: 4px;
+	position: relative;
+	overflow: hidden;
+}
+.primary{
+	color: $uni-primary;
+}
+.a-mask {
+    width: 100%;
+    height: 70rpx;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(20rpx);
+    font-weight: 600;
+    font-size: 30rpx;
+}
+.a-avatar-40 {
+    width: 40rpx;
+    height: 40rpx;
+    border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+
+    image {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+}
+
+.a-wd100 {
+    width: 100%;
+}
+.youxia_fix {
+    position: fixed;
+    z-index: 100;
+    bottom: 150rpx;
+    right: 50rpx;
+}
+.yuanxing {
+    border-radius: 50%;
+}
+
+.youxia_yuan_anniu {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    // color: #fff;
+    position: fixed;
+    z-index: 10;
+    bottom: 150rpx;
+    right: 50rpx;
+    box-shadow: 0 0 20rpx rgba(1, 153, 254, 0.8);
+    @extend .row;
+    @extend .flex-center;
+}
+
+.chaochu_shenlue {
+    span {
+        display: inline-block;
+        width: 100px; /* 设置span的宽度 */
+        white-space: nowrap; /* 文本不换行 */
+        overflow: hidden; /* 超出部分隐藏 */
+        text-overflow: ellipsis; /* 显示省略号 */
+    }
+}
+
+.pageBg {
+    background: linear-gradient(to bottom, transparent, #fff 400rpx),
+        linear-gradient(to right, #beecd8 20%, #f4e2d8);
+    min-height: 80vh;
+}
+
+.loadingLayout {
+    padding: 30rpx 0;
+}
+
+.safe-area-inset-bottom {
+    height: env(safe-area-inset-bottom);
+}
+
+$zhong: 16px;
+$da: 30px;
+.a-pa-md {
+    padding: $zhong;
+}
+.a-pt-lg {
+    padding-top: $da;
+}
+
+.a-lh-1d5 {
+    line-height: 1.5em;
+}
+.a-lh-2 {
+    line-height: 2em;
+}
+
+// .a-pa-md {
+// 	padding: 16rpx
+// }
+
+.a-yuanjiao_yingyin {
+    box-shadow: 0 1px 5px #0003, 0 2px 2px #00000024, 0 3px 1px -2px #0000001f;
+    border-radius: 4px;
+    vertical-align: top;
+    background: #fff;
+    position: relative;
+}
+
+.row,
+.column,
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+
+    &.inline {
+        display: inline-flex;
+    }
+}
+
+.row.reverse {
+    flex-direction: row-reverse;
+}
+
+.column {
+    flex-direction: column;
+
+    &.reverse {
+        flex-direction: column-reverse;
+    }
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.no-wrap {
+    flex-wrap: nowrap;
+}
+
+.reverse-wrap {
+    flex-wrap: wrap-reverse;
+}
+
+.order- {
+    &first {
+        order: -10000;
+    }
+
+    &last {
+        order: 10000;
+    }
+
+    &none {
+        order: 0;
+    }
+}
+
+.justify- {
+    &start {
+        justify-content: flex-start;
+    }
+
+    &end {
+        justify-content: flex-end;
+    }
+
+    &center {
+        justify-content: center;
+    }
+
+    &between {
+        justify-content: space-between;
+    }
+
+    &around {
+        justify-content: space-around;
+    }
+
+    &evenly {
+        justify-content: space-evenly;
+    }
+}
+
+.items- {
+    &start {
+        align-items: flex-start;
+    }
+
+    &end {
+        align-items: flex-end;
+    }
+
+    &center {
+        align-items: center;
+    }
+
+    &baseline {
+        align-items: baseline;
+    }
+
+    &stretch {
+        align-items: stretch;
+    }
+}
+
+.content- {
+    &start {
+        align-content: flex-start;
+    }
+
+    &end {
+        align-content: flex-end;
+    }
+
+    &center {
+        align-content: center;
+    }
+
+    &stretch {
+        align-content: stretch;
+    }
+
+    &between {
+        align-content: space-between;
+    }
+
+    &around {
+        align-content: space-around;
+    }
+}
+
+.self- {
+    &start {
+        align-self: flex-start;
+    }
+
+    &end {
+        align-self: flex-end;
+    }
+
+    &center {
+        align-self: center;
+    }
+
+    &baseline {
+        align-self: baseline;
+    }
+
+    &stretch {
+        align-self: stretch;
+    }
+}
+
+.flex-center {
+    @extend .flex;
+    @extend .items-center;
+    @extend .justify-center;
+}
+
+$space-base: 16rpx !default;
+$space-x-base: $space-base !default;
+$space-y-base: $space-base !default;
+
+$space-none: (
+    x: 0,
+    y: 0,
+) !default;
+$space-xs: (
+    x: $space-x-base * 0.25,
+    y: $space-y-base * 0.25,
+) !default;
+$space-sm: (
+    x: $space-x-base * 0.5,
+    y: $space-y-base * 0.5,
+) !default;
+$space-md: (
+    x: $space-x-base,
+    y: $space-y-base,
+) !default;
+$space-lg: (
+    x: $space-x-base * 1.5,
+    y: $space-y-base * 1.5,
+) !default;
+$space-xl: (
+    x: $space-x-base * 3,
+    y: $space-y-base * 3,
+) !default;
+
+$spaces: (
+    "none": $space-none,
+    "xs": $space-xs,
+    "sm": $space-sm,
+    "md": $space-md,
+    "lg": $space-lg,
+    "xl": $space-xl,
+) !default;
+
+@each $space, $value in $spaces {
+    $x: map-get($value, x);
+    $y: map-get($value, y);
+
+    .a-gutter-#{$space} {
+        margin-top: -$x;
+        margin-left: -$x;
+    }
+
+    // 微信小程序编译出错
+    // .a-gutter-#{$space} > * {
+    //   margin-top: $x;
+    //   margin-left: $x;
+    // }
+
+    .a-pa-#{$space} {
+        padding: $x $y;
+    }
+}

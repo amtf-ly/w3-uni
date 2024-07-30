@@ -1,0 +1,50 @@
+// uni-button {
+// 	line-height: 2em ;
+// }
+.uni-list--border-top{
+	opacity: 0;
+}
+.uni-list--border-bottom{
+	opacity: 0;
+}
+.uni-forms-item__content {
+    display: flex;
+    align-items: center;
+}
+.uni-card {
+    .uni-card__content {
+        color: black !important;
+		padding: 0 !important;
+    }
+}
+.uni-card--shadow {
+    box-shadow: rgba($color: $uni-primary, $alpha: 0.4) 0px 0px 3px 1px !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+.uni-popup {
+    z-index: 999 !important;
+}
+
+// .abs{
+// 	.uni-fab__circle,.uni-fab {
+// 			position: absolute !important;
+// 				height: 25px !important;
+// 				border-radius: 50% !important;
+// 		}
+// 	.uni-fab__circle {
+// 				width: 25px !important;
+// 		}
+// }
+
+.wu_biankuan {
+    .uni-select {
+        border: 0px !important;
+    }
+}
+
+.a-fanda {
+    uni-image > div {
+        transform: scaleX(1.3) scaleY(1.8) !important;
+    }
+}
